@@ -1,0 +1,251 @@
+
+#days {
+    font-weight: bold; 
+    color: #ffffff;
+}
+
+#hours {
+    font-weight: bold; 
+    color: #ffffff;
+}
+
+#minutes {
+    font-weight: bold; 
+    color: #ffffff;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d141b;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+#countdown {
+    background-color: #4e4b4b; 
+    display: flex;
+  margin-top: 0px;
+    padding: 20px;
+    flex-direction: row;
+    width: 500px;
+    gap: 20px;
+    font-size: 24px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    justify-content: center; 
+   height: 50pt;
+   
+    transition: background-color 0.3s ease;
+}
+
+#countdown span {
+    font-weight: bold;
+    color: #fff; 
+    text-transform: uppercase;
+}
+
+#countdown div {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+#countdown div span {
+    font-size: 16px;
+    margin-top: 5px; 
+}
+
+
+#countdown:hover {
+    background-color: #3e3a3a; 
+}
+
+#countdown .count-item {
+    background-color: #2a2a2a; 
+    padding: 25px 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 70px; 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    font-size: 32px; 
+    transition: transform 0.3s ease; 
+}
+
+#countdown .count-item:hover {
+    transform: scale(1.1); 
+}
+
+#countdown .count-item span {
+    font-size: 15px; 
+}
+
+
+#timer {
+    
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 20px;
+    padding: 70px;
+    height: auto;
+    gap:15px;
+}
+#preview {
+    background-color: #533fa9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 100px;
+    width :200px
+}
+
+#preview:hover {
+    background-color: #7767c7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 100px;
+    width :200px
+    
+} 
+/* General Body Styles */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    background-image: url('./images/3d-dark-grunge-display-background-with-smoky-atmosphere.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Positioning #info to Top-Right */
+#info {
+    position: absolute; 
+    top: 20px; 
+    left: 900px;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    gap: 50px;
+    font-size: 18px; 
+   
+   
+    padding: 15px;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Name Element */
+#name {
+    font-weight: bold;
+    color: rgb(238, 238, 245);
+}
+
+/* Image Styles */
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f8f2f2;
+}
+
+/* Hover Container for Tooltip */
+.hover-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #a93f5d;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.hover-container:hover {
+    background-color: #c74e6f;
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #533fa9;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.hover-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    width: 500px;
+    
+}
+
+
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -1;
+    opacity: 0.5;
+    
+}
+
+
+#Happy-New-Year {
+    position: absolute;
+    top: 390px;
+    left: 20px;
+  
+  font-size: 90px;
+  font-weight: bold;
+  color: #22d3b5;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
